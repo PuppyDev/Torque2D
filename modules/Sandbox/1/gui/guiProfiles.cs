@@ -232,21 +232,6 @@ if (!isObject(GuiCheckBoxProfile)) new GuiControlProfile (GuiCheckBoxProfile)
 
 //-----------------------------------------------------------------------------
 
-if(!isObject(GuiConsoleProfile)) new GuiControlProfile (GuiConsoleProfile)
-{
-    fontType = $platformFontType;
-    fontSize = $platformFontSize * 1.1;
-    fontColor = White;
-    fontColorHL = LightSlateGray;
-    fontColorNA = Red;
-    fontColors[6] = "100 100 100";
-    fontColors[7] = "100 100 0";
-    fontColors[8] = "0 0 100";
-    fontColors[9] = "0 100 0";
-};
-
-//-----------------------------------------------------------------------------
-
 if (!isObject(GuiTextEditProfile)) new GuiControlProfile (GuiTextEditProfile)
 {
     fontSize = $platformFontSize;
@@ -278,14 +263,6 @@ if(!isObject(GuiNumberEditProfile)) new GuiControlProfile (GuiNumberEditProfile:
 
 //-----------------------------------------------------------------------------
 
-if(!isObject(GuiConsoleTextEditProfile)) new GuiControlProfile (GuiConsoleTextEditProfile : GuiTextEditProfile)
-{
-    fontType = $platformFontType;
-    fontSize = $platformFontSize * 1.1;
-};
-
-//-----------------------------------------------------------------------------
-
 if(!isObject(GuiScrollProfile)) new GuiControlProfile (GuiScrollProfile)
 {
     opaque = true;
@@ -307,17 +284,6 @@ if(!isObject(GuiTransparentScrollProfile)) new GuiControlProfile (GuiTransparent
    borderColor = "0 0 0";
    bitmap = "^Sandbox/gui/images/scrollBar.png";
    hasBitmapArray = true;
-};
-
-//-----------------------------------------------------------------------------
-
-if(!isObject(ConsoleScrollProfile)) new GuiControlProfile( ConsoleScrollProfile : GuiScrollProfile )
-{
-    opaque = true;
-    fillColor = "0 0 0 120";
-    border = 3;
-    borderThickness = 0;
-    borderColor = "0 0 0";
 };
 
 //-----------------------------------------------------------------------------

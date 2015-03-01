@@ -25,8 +25,7 @@ function Sandbox::create( %this )
     // Load the preferences.
     %this.loadPreferences();
     
-    // Load Sandbox scripts.
-    exec( "./scripts/console.cs" );
+    // Load Sandbox scripts.    
     exec( "./scripts/toolbox.cs" );    
     exec( "./scripts/customToolboxGui.cs" );
     exec( "./scripts/manipulation.cs" );
@@ -38,11 +37,7 @@ function Sandbox::create( %this )
 
     // Create the sandbox window.
     CreateSandboxWindow();
-    
-    // Load and configure the console.
-    Sandbox.add( TamlRead("./gui/ConsoleDialog.gui.taml") );
-    GlobalActionMap.bind( keyboard, "ctrl tilde", toggleConsole );
-    
+        
     // Load and configure the toolbox.
     Sandbox.add( TamlRead("./gui/ToolboxDialog.gui.taml") );
 

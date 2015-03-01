@@ -1,0 +1,13 @@
+<ModuleDefinition
+	ModuleId="Console"
+	VersionId="1"
+    Group="Utilities"
+	Description="Provides a dropdown console GUI."
+	ScriptFile="main.cs"
+	CreateFunction="create"
+	DestroyFunction="destroy">
+		<DeclaredAssets
+			Path="assets"
+			Extension="asset.taml"
+			Recurse="true"/>
+</ModuleDefinition>

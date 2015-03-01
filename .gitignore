@@ -5,6 +5,7 @@
 .LSOverride
 /tmp/*
 /preferences.cs
+*.bak
 *.dso
 *.edso
 *.user

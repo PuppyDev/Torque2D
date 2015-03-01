@@ -171,7 +171,8 @@ Scene::Scene() :
     mIsEditorScene(0),
     mUpdateCallback(false),
     mRenderCallback(false),
-    mSceneIndex(0)
+    mSceneIndex(0),
+	mParticleSystem(NULL)
 {
     // Set Vector Associations.
     VECTOR_SET_ASSOCIATION( mSceneObjects );
@@ -5311,6 +5312,19 @@ const char* Scene::getDebugOptionDescription( Scene::DebugOption debugOption )
     Con::warnf( "Scene::getDebugOptionDescription() - Invalid debug option." );
 
     return StringTable->EmptyString;
+}
+
+//-----------------------------------------------------------------------------
+
+b2ParticleSystem* Scene::GetParticleSystem()
+{
+	if (mParticleSystem == NULL)
+	{
+		const b2ParticleSystemDef particleSystemDef;		
+		mParticleSystem = getWorld()->CreateParticleSystem(&particleSystemDef);
+	}
+
+	return mParticleSystem;
 }
 
 //-----------------------------------------------------------------------------

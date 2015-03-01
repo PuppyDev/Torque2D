@@ -193,11 +193,11 @@
     <Filter Include="persistence\taml\xml">
       <UniqueIdentifier>{cc1c1416-376b-4686-a4ac-21d1a35c9390}</UniqueIdentifier>
     </Filter>
-    <Filter Include="input\leapMotion">
-      <UniqueIdentifier>{addcb993-5059-42bf-a1ea-871f700c67c3}</UniqueIdentifier>
-    </Filter>
     <Filter Include="spine">
       <UniqueIdentifier>{bb776838-ed6f-477c-b366-dd0c5c60ae5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Box2D\Particle">
+      <UniqueIdentifier>{3ba09e95-6404-4c1f-891e-4da9c4a53336}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -578,24 +578,6 @@
     </ClCompile>
     <ClCompile Include="..\..\source\Box2D\Collision\Shapes\b2PolygonShape.cpp">
       <Filter>Box2D\Collision\Shapes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\Box2D\Common\b2BlockAllocator.cpp">
-      <Filter>Box2D\Common</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\Box2D\Common\b2Draw.cpp">
-      <Filter>Box2D\Common</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\Box2D\Common\b2Math.cpp">
-      <Filter>Box2D\Common</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\Box2D\Common\b2Settings.cpp">
-      <Filter>Box2D\Common</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\Box2D\Common\b2StackAllocator.cpp">
-      <Filter>Box2D\Common</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\Box2D\Common\b2Timer.cpp">
-      <Filter>Box2D\Common</Filter>
     </ClCompile>
     <ClCompile Include="..\..\source\Box2D\Dynamics\b2Body.cpp">
       <Filter>Box2D\Dynamics</Filter>
@@ -1344,12 +1326,6 @@
     <ClCompile Include="..\..\source\console\Package.cc">
       <Filter>console</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\input\leapMotion\leapMotionManager.cc">
-      <Filter>input\leapMotion</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\input\leapMotion\leapMotionUtil.cpp">
-      <Filter>input\leapMotion</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\source\math\mPoint.cpp">
       <Filter>math</Filter>
     </ClCompile>
@@ -1423,6 +1399,51 @@
       <Filter>2d\assets</Filter>
     </ClCompile>
     <ClCompile Include="..\..\source\2d\sceneobject\SkeletonObject.cc">
+      <Filter>2d\sceneobject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\Box2D\Particle\b2Particle.cpp">
+      <Filter>Box2D\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\Box2D\Particle\b2ParticleAssembly.cpp">
+      <Filter>Box2D\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\Box2D\Particle\b2ParticleGroup.cpp">
+      <Filter>Box2D\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\Box2D\Particle\b2ParticleSystem.cpp">
+      <Filter>Box2D\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\Box2D\Particle\b2VoronoiDiagram.cpp">
+      <Filter>Box2D\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\Box2D\Common\b2BlockAllocator.cpp">
+      <Filter>Box2D\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\Box2D\Common\b2Draw.cpp">
+      <Filter>Box2D\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\Box2D\Common\b2FreeList.cpp">
+      <Filter>Box2D\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\Box2D\Common\b2Math.cpp">
+      <Filter>Box2D\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\Box2D\Common\b2Settings.cpp">
+      <Filter>Box2D\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\Box2D\Common\b2StackAllocator.cpp">
+      <Filter>Box2D\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\Box2D\Common\b2Stat.cpp">
+      <Filter>Box2D\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\Box2D\Common\b2Timer.cpp">
+      <Filter>Box2D\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\Box2D\Common\b2TrackedBlock.cpp">
+      <Filter>Box2D\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\2d\sceneobject\LiquidFunObject.cc">
       <Filter>2d\sceneobject</Filter>
     </ClCompile>
   </ItemGroup>
@@ -1819,27 +1840,6 @@
     </ClInclude>
     <ClInclude Include="..\..\source\Box2D\Collision\Shapes\b2Shape.h">
       <Filter>Box2D\Collision\Shapes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\Box2D\Common\b2BlockAllocator.h">
-      <Filter>Box2D\Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\Box2D\Common\b2Draw.h">
-      <Filter>Box2D\Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\Box2D\Common\b2GrowableStack.h">
-      <Filter>Box2D\Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\Box2D\Common\b2Math.h">
-      <Filter>Box2D\Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\Box2D\Common\b2Settings.h">
-      <Filter>Box2D\Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\Box2D\Common\b2StackAllocator.h">
-      <Filter>Box2D\Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\Box2D\Common\b2Timer.h">
-      <Filter>Box2D\Common</Filter>
     </ClInclude>
     <ClInclude Include="..\..\source\Box2D\Dynamics\b2Body.h">
       <Filter>Box2D\Dynamics</Filter>
@@ -3066,18 +3066,6 @@
     <ClInclude Include="..\..\source\console\Package.h">
       <Filter>console</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\input\leapMotion\leapMotionConstants.h">
-      <Filter>input\leapMotion</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\input\leapMotion\leapMotionManager.h">
-      <Filter>input\leapMotion</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\input\leapMotion\LeapMotionManager_ScriptBinding.h">
-      <Filter>input\leapMotion</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\input\leapMotion\leapMotionUtil.h">
-      <Filter>input\leapMotion</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\source\spine\Animation.h">
       <Filter>spine</Filter>
     </ClInclude>
@@ -3159,6 +3147,69 @@
     <ClInclude Include="..\..\source\2d\sceneobject\SkeletonObject.h">
       <Filter>2d\sceneobject</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\source\Box2D\Particle\b2Particle.h">
+      <Filter>Box2D\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\Box2D\Particle\b2ParticleAssembly.h">
+      <Filter>Box2D\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\Box2D\Particle\b2ParticleGroup.h">
+      <Filter>Box2D\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\Box2D\Particle\b2ParticleSystem.h">
+      <Filter>Box2D\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\Box2D\Particle\b2StackQueue.h">
+      <Filter>Box2D\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\Box2D\Particle\b2VoronoiDiagram.h">
+      <Filter>Box2D\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\Box2D\Common\b2BlockAllocator.h">
+      <Filter>Box2D\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\Box2D\Common\b2Draw.h">
+      <Filter>Box2D\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\Box2D\Common\b2FreeList.h">
+      <Filter>Box2D\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\Box2D\Common\b2GrowableBuffer.h">
+      <Filter>Box2D\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\Box2D\Common\b2GrowableStack.h">
+      <Filter>Box2D\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\Box2D\Common\b2IntrusiveList.h">
+      <Filter>Box2D\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\Box2D\Common\b2Math.h">
+      <Filter>Box2D\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\Box2D\Common\b2Settings.h">
+      <Filter>Box2D\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\Box2D\Common\b2SlabAllocator.h">
+      <Filter>Box2D\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\Box2D\Common\b2StackAllocator.h">
+      <Filter>Box2D\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\Box2D\Common\b2Stat.h">
+      <Filter>Box2D\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\Box2D\Common\b2Timer.h">
+      <Filter>Box2D\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\Box2D\Common\b2TrackedBlock.h">
+      <Filter>Box2D\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\2d\sceneobject\LiquidFunObject.h">
+      <Filter>2d\sceneobject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\2d\sceneobject\LiquidFunObject_ScriptBinding.h">
+      <Filter>2d\sceneobject</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\source\math\mMath_ASM.asm">
@@ -3176,5 +3227,10 @@
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Torque 2D.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\source\Box2D\Particle\b2ParticleAssembly.neon.s">
+      <Filter>Box2D\Particle</Filter>
+    </None>
   </ItemGroup>
 </Project>

@@ -27,12 +27,13 @@ function AppCore::create( %this )
     exec("./scripts/defaultPreferences.cs");
     exec("./scripts/canvas.cs");
     exec("./scripts/openal.cs");
+    exec("./gui/guiProfiles.cs");
     
     // Initialize the canvas
     initializeCanvas("Torque 2D");
     
     // Set the canvas color
-    Canvas.BackgroundColor = "CornflowerBlue";
+    Canvas.BackgroundColor = "Black";
     Canvas.UseBackgroundColor = true;
     
     // Initialize audio

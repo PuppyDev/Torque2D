@@ -75,7 +75,7 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>../../Lib/LeapSDK/include;../../Lib/zlib;../../Lib/lpng;../../Lib/ljpeg;../../Lib/openal/win32;../../source;../../source/persistence/rapidjson/include;../../source/persistence/libjson;../../source/testing/googleTest;../../source/testing/googleTest/include;../../source/spine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../Lib/zlib;../../Lib/lpng;../../Lib/ljpeg;../../Lib/openal/win32;../../source;../../source/persistence/rapidjson/include;../../source/persistence/libjson;../../source/testing/googleTest;../../source/testing/googleTest/include;../../source/spine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>TORQUE_DEBUG;TORQUE_DEBUG_GUARD;_CRT_SECURE_NO_DEPRECATE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -100,10 +100,10 @@
       <AdditionalIncludeDirectories>../../Lib/MSPlatformSDK/Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>Leapd.lib;COMCTL32.LIB;COMDLG32.LIB;USER32.LIB;ADVAPI32.LIB;GDI32.LIB;RPCRT4.LIB;WINMM.LIB;WSOCK32.LIB;vfw32.lib;Imm32.lib;unicows.lib;shell32.lib;shlwapi.lib;ole32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>COMCTL32.LIB;COMDLG32.LIB;USER32.LIB;ADVAPI32.LIB;GDI32.LIB;RPCRT4.LIB;WINMM.LIB;WSOCK32.LIB;vfw32.lib;Imm32.lib;unicows.lib;shell32.lib;shlwapi.lib;ole32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>../../../Torque2D_DEBUG.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>../../lib/LeapSDK/lib/x86;../../Lib/unicode;../../lib/MSPlatformSDK/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>../../Lib/unicode;../../lib/MSPlatformSDK/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMTD;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(IntDir)$(ProjectName).pdb</ProgramDatabaseFile>
@@ -124,7 +124,7 @@
     <ClCompile>
       <Optimization>MinSpace</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <AdditionalIncludeDirectories>../../Lib/LeapSDK/include;../../Lib/zlib;../../Lib/lpng;../../Lib/ljpeg;../../Lib/openal/win32;../../source;../../source/persistence/rapidjson/include;../../source/persistence/libjson;../../source/testing/googleTest;../../source/testing/googleTest/include;../../source/spine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../Lib/zlib;../../Lib/lpng;../../Lib/ljpeg;../../Lib/openal/win32;../../source;../../source/persistence/rapidjson/include;../../source/persistence/libjson;../../source/testing/googleTest;../../source/testing/googleTest/include;../../source/spine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>UNICODE;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -149,10 +149,10 @@
       <AdditionalIncludeDirectories>../../Lib/MSPlatformSDK/Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>Leap.lib;COMCTL32.LIB;COMDLG32.LIB;USER32.LIB;ADVAPI32.LIB;GDI32.LIB;WINMM.LIB;WSOCK32.LIB;vfw32.lib;Imm32.lib;unicows.lib;shell32.lib;shlwapi.lib;ole32.lib;RPCRT4.LIB;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>COMCTL32.LIB;COMDLG32.LIB;USER32.LIB;ADVAPI32.LIB;GDI32.LIB;WINMM.LIB;WSOCK32.LIB;vfw32.lib;Imm32.lib;unicows.lib;shell32.lib;shlwapi.lib;ole32.lib;RPCRT4.LIB;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>../../../Torque2D.exe</OutputFile>
       <SuppressStartupBanner>false</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>../../lib/LeapSDK/lib/x86;../../Lib/unicode;../../Lib/MSPlatformSDK/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>../../Lib/unicode;../../Lib/MSPlatformSDK/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>LIBC;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ProgramDatabaseFile>$(IntDir)$(ProjectName).pdb</ProgramDatabaseFile>
@@ -270,6 +270,7 @@
     <ClCompile Include="..\..\source\2d\gui\SceneWindow.cc" />
     <ClCompile Include="..\..\source\2d\sceneobject\CompositeSprite.cc" />
     <ClCompile Include="..\..\source\2d\sceneobject\ImageFont.cc" />
+    <ClCompile Include="..\..\source\2d\sceneobject\LiquidFunObject.cc" />
     <ClCompile Include="..\..\source\2d\sceneobject\ParticlePlayer.cc" />
     <ClCompile Include="..\..\source\2d\sceneobject\SceneObject.cc" />
     <ClCompile Include="..\..\source\2d\sceneobject\SceneObjectList.cc" />
@@ -310,10 +311,13 @@
     <ClCompile Include="..\..\source\Box2D\Collision\Shapes\b2PolygonShape.cpp" />
     <ClCompile Include="..\..\source\Box2D\Common\b2BlockAllocator.cpp" />
     <ClCompile Include="..\..\source\Box2D\Common\b2Draw.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Common\b2FreeList.cpp" />
     <ClCompile Include="..\..\source\Box2D\Common\b2Math.cpp" />
     <ClCompile Include="..\..\source\Box2D\Common\b2Settings.cpp" />
     <ClCompile Include="..\..\source\Box2D\Common\b2StackAllocator.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Common\b2Stat.cpp" />
     <ClCompile Include="..\..\source\Box2D\Common\b2Timer.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Common\b2TrackedBlock.cpp" />
     <ClCompile Include="..\..\source\Box2D\Dynamics\b2Body.cpp" />
     <ClCompile Include="..\..\source\Box2D\Dynamics\b2ContactManager.cpp" />
     <ClCompile Include="..\..\source\Box2D\Dynamics\b2Fixture.cpp" />
@@ -341,6 +345,11 @@
     <ClCompile Include="..\..\source\Box2D\Dynamics\Joints\b2RopeJoint.cpp" />
     <ClCompile Include="..\..\source\Box2D\Dynamics\Joints\b2WeldJoint.cpp" />
     <ClCompile Include="..\..\source\Box2D\Dynamics\Joints\b2WheelJoint.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Particle\b2Particle.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Particle\b2ParticleAssembly.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Particle\b2ParticleGroup.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Particle\b2ParticleSystem.cpp" />
+    <ClCompile Include="..\..\source\Box2D\Particle\b2VoronoiDiagram.cpp" />
     <ClCompile Include="..\..\source\Box2D\Rope\b2Rope.cpp" />
     <ClCompile Include="..\..\source\collection\bitTables.cc" />
     <ClCompile Include="..\..\source\collection\hashTable.cc" />
@@ -413,8 +422,6 @@
     <ClCompile Include="..\..\source\gui\language\lang.cc" />
     <ClCompile Include="..\..\source\gui\messageVector.cc" />
     <ClCompile Include="..\..\source\input\actionMap.cc" />
-    <ClCompile Include="..\..\source\input\leapMotion\leapMotionManager.cc" />
-    <ClCompile Include="..\..\source\input\leapMotion\leapMotionUtil.cpp" />
     <ClCompile Include="..\..\source\io\bitStream.cc" />
     <ClCompile Include="..\..\source\io\bufferStream.cc" />
     <ClCompile Include="..\..\source\io\fileObject.cc" />
@@ -702,6 +709,8 @@
     <ClInclude Include="..\..\source\2d\sceneobject\CompositeSprite_ScriptBinding.h" />
     <ClInclude Include="..\..\source\2d\sceneobject\ImageFont.h" />
     <ClInclude Include="..\..\source\2d\sceneobject\ImageFont_ScriptBinding.h" />
+    <ClInclude Include="..\..\source\2d\sceneobject\LiquidFunObject.h" />
+    <ClInclude Include="..\..\source\2d\sceneobject\LiquidFunObject_ScriptBinding.h" />
     <ClInclude Include="..\..\source\2d\sceneobject\ParticlePlayer.h" />
     <ClInclude Include="..\..\source\2d\sceneobject\ParticlePlayer_ScriptBinding.h" />
     <ClInclude Include="..\..\source\2d\sceneobject\SceneObject.h" />
@@ -770,11 +779,17 @@
     <ClInclude Include="..\..\source\Box2D\Collision\Shapes\b2Shape.h" />
     <ClInclude Include="..\..\source\Box2D\Common\b2BlockAllocator.h" />
     <ClInclude Include="..\..\source\Box2D\Common\b2Draw.h" />
+    <ClInclude Include="..\..\source\Box2D\Common\b2FreeList.h" />
+    <ClInclude Include="..\..\source\Box2D\Common\b2GrowableBuffer.h" />
     <ClInclude Include="..\..\source\Box2D\Common\b2GrowableStack.h" />
+    <ClInclude Include="..\..\source\Box2D\Common\b2IntrusiveList.h" />
     <ClInclude Include="..\..\source\Box2D\Common\b2Math.h" />
     <ClInclude Include="..\..\source\Box2D\Common\b2Settings.h" />
+    <ClInclude Include="..\..\source\Box2D\Common\b2SlabAllocator.h" />
     <ClInclude Include="..\..\source\Box2D\Common\b2StackAllocator.h" />
+    <ClInclude Include="..\..\source\Box2D\Common\b2Stat.h" />
     <ClInclude Include="..\..\source\Box2D\Common\b2Timer.h" />
+    <ClInclude Include="..\..\source\Box2D\Common\b2TrackedBlock.h" />
     <ClInclude Include="..\..\source\Box2D\Dynamics\b2Body.h" />
     <ClInclude Include="..\..\source\Box2D\Dynamics\b2ContactManager.h" />
     <ClInclude Include="..\..\source\Box2D\Dynamics\b2Fixture.h" />
@@ -803,6 +818,12 @@
     <ClInclude Include="..\..\source\Box2D\Dynamics\Joints\b2RopeJoint.h" />
     <ClInclude Include="..\..\source\Box2D\Dynamics\Joints\b2WeldJoint.h" />
     <ClInclude Include="..\..\source\Box2D\Dynamics\Joints\b2WheelJoint.h" />
+    <ClInclude Include="..\..\source\Box2D\Particle\b2Particle.h" />
+    <ClInclude Include="..\..\source\Box2D\Particle\b2ParticleAssembly.h" />
+    <ClInclude Include="..\..\source\Box2D\Particle\b2ParticleGroup.h" />
+    <ClInclude Include="..\..\source\Box2D\Particle\b2ParticleSystem.h" />
+    <ClInclude Include="..\..\source\Box2D\Particle\b2StackQueue.h" />
+    <ClInclude Include="..\..\source\Box2D\Particle\b2VoronoiDiagram.h" />
     <ClInclude Include="..\..\source\Box2D\Rope\b2Rope.h" />
     <ClInclude Include="..\..\source\collection\bitMatrix.h" />
     <ClInclude Include="..\..\source\collection\bitSet.h" />
@@ -916,10 +937,6 @@
     <ClInclude Include="..\..\source\gui\messageVector.h" />
     <ClInclude Include="..\..\source\input\actionMap.h" />
     <ClInclude Include="..\..\source\input\actionMap_ScriptBinding.h" />
-    <ClInclude Include="..\..\source\input\leapMotion\leapMotionConstants.h" />
-    <ClInclude Include="..\..\source\input\leapMotion\leapMotionManager.h" />
-    <ClInclude Include="..\..\source\input\leapMotion\LeapMotionManager_ScriptBinding.h" />
-    <ClInclude Include="..\..\source\input\leapMotion\leapMotionUtil.h" />
     <ClInclude Include="..\..\source\io\bitStream.h" />
     <ClInclude Include="..\..\source\io\bufferStream.h" />
     <ClInclude Include="..\..\source\io\fileObject.h" />
@@ -1275,6 +1292,9 @@
       <Project>{86cb2525-0cf3-40d3-bf42-a0a95035ee8c}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\source\Box2D\Particle\b2ParticleAssembly.neon.s" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

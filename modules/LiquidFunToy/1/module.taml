@@ -1,0 +1,10 @@
+<ModuleDefinition
+	ModuleId="LiquidFunToy"
+	VersionId="1"
+	Description="Demonstrates creating a LiquidFun sprite object."
+	Dependencies="ToyAssets=1"
+	Type="toy"
+	ToyCategoryIndex="3"
+	ScriptFile="main.cs"
+	CreateFunction="create"
+	DestroyFunction="destroy"/>

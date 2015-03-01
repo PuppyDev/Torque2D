@@ -173,6 +173,9 @@ public:
     typedef HashMap<b2Contact*, TickContact>    typeContactHash;
     typedef Vector<AssetPtr<AssetBase>*>        typeAssetPtrVector;
 
+	/// LiquidFun Particles
+	typedef HashMap<S32, b2ParticleGroup*>      typeLiquidParticleHash;
+
     /// Scene Debug Options.
     enum DebugOption
     {
@@ -266,6 +269,11 @@ private:
     typeContactHash             mBeginContacts;
     typeContactVector           mEndContacts;
     U32                         mSceneIndex;
+
+	/// LiquidFun Particles
+	typeLiquidParticleHash      mLiquidParticles;
+	S32                         mLiquidParticleMasterId;
+	b2ParticleSystem*			mParticleSystem;
 
 private:   
     /// Contacts.
@@ -677,6 +685,9 @@ public:
     static const char* getPickModeDescription( PickMode pickMode );
     static DebugOption getDebugOptionEnum(const char* label);
     static const char* getDebugOptionDescription( DebugOption debugOption );
+
+	/// LiquidFun Particles
+	b2ParticleSystem* GetParticleSystem();
 
     /// Declare Console Object.
     DECLARE_CONOBJECT(Scene);
