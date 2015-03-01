@@ -19,7 +19,7 @@ If you do not wish to compile the source code yourself, precompiled binary files
 
 ### Building the Source
 
-After downloading a copy of the source code, the following project files for each platform are provided for you and can be found in the `engine/compilers` folder.
+After downloading a copy of the source code, the following project files for each platform are provided for you and can be found in the `engine/compilers` folder. 
 
 * **Windows:** Visual Studio 2010, 2012, or 2013 (works with the free, "Express for Windows Desktop" version)
 * **OSX:** Xcode
